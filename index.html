@@ -9,17 +9,21 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <!-- <link rel="stylesheet" href="./bootstrap.min.css"> -->
   <style>
-
+    .image {
+      width: 150px;
+      height: 150px;
+    }
   </style>
 
 </head>
 
 <body>
-  <div class="container-fluid bg-body-secondary pt-4">
-    <div class="row">
+  <div class="container-fluid bg-body-secondary py-4">
+    <div class="row gy-4">
       <div class="col-12 col-sm-8">
         <div class="bg-white p-3">
-          <h1 class="display-4 text-bg-primary p-2">Bootstrap Grid：打造網頁佈局的完美解決方案</h1>
+          <img src="https://pbs.twimg.com/media/FrV0Cp3aAAAEHBQ?format=jpg&name=large" alt="" class="img-fluid">
+          <h1 class="display-4 text-bg-primary p-2 mt-3">Bootstrap Grid：打造網頁佈局的完美解決方案</h1>
           <p style="white-space: pre-line;">嘿，大家好！今天我們要一起探索 Bootstrap 的
             Grid（網格）系統，這是設計師和開發者的秘密武器，能夠輕鬆打造出令人驚艷的網頁佈局。快跟著我們一起踏上這趟有趣的旅程吧！
 
@@ -53,7 +57,7 @@
         </div>
       </div>
       <div class="col-12 col-sm-4">
-        <div class="vstack gap-3">
+        <div class="vstack gap-3 sticky-top">
           <div class="vstack gap-3 bg-white p-3">
             <h4 class="text-primary">更多文章</h4>
             <div class="vstack gap-1 order-1">
@@ -68,17 +72,22 @@
               <p>在這篇教學中，我們將一起探索 Bootstrap 的按鈕元件，讓我們的網頁華麗又實用！我們將學習如何使用不同的按鈕樣式、大小和狀態，並添加圖標或下拉選單等功能。透過
                 Bootstrap的強大按鈕元件，我們可以輕鬆打造出各種吸引人的互動元素～</p>
             </div>
-            <div class="vstack gap-1 order-0">
-              <h5 class="text-truncate">簡化表單設計！Bootstrap Form 教學</h5>
-              <div>2023/5/18</div>
-              <p>100人看過
-              </p>
+            <div class="d-flex gap-1 order-0">
+              <div style="width: calc(100% - 150px);">
+                <h5 class="text-truncate">簡化表單設計！Bootstrap Form 教學</h5>
+                <div>2023/5/18</div>
+                <p>100人看過</p>
+              </div>
+              <div class="image">
+                <img src="./1.jpeg" alt="" class="img-thumbnail">
+              </div>
             </div>
           </div>
           <div class="vstack gap-3 bg-white p-3">
             <h4 class="text-primary">關於我</h4>
-            <div class="">
-              <img src="./1.jpeg" alt="avatar" class="rounded-circle w-100">
+            <div class="image">
+              <img src="https://pbs.twimg.com/media/FMsHg-cacAA2zMc.jpg:large" alt="avatar"
+                class="rounded-circle w-100 h-100 object-fit-cover">
             </div>
             <dl class="row">
               <dt class="col-4">Email</dt>
