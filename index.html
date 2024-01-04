@@ -36,6 +36,24 @@
           <div class="bg-white p-4 p-md-5 rounded-4 shadow-sm">
             <img src="https://pbs.twimg.com/media/FrV0Cp3aAAAEHBQ?format=jpg&name=large" alt=""
               class="img-fluid rounded-4">
+            <nav aria-label="breadcrumb" class="mt-3">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">首頁</a></li>
+                <li class="breadcrumb-item"><a href="#">Bootstrap</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Grid</li>
+              </ol>
+            </nav>
+            <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                分類
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">教學</a></li>
+                <li><a class="dropdown-item" href="#">實作案例</a></li>
+                <li><a class="dropdown-item" href="#">資源分享</a></li>
+              </ul>
+            </div>
             <h1 class="display-4 text-bg-primary px-3 py-2 my-4 rounded-4">Bootstrap Grid：打造網頁佈局的完美解決方案</h1>
             <p style="white-space: pre-line;">嘿，大家好！今天我們要一起探索 Bootstrap 的
               Grid（網格）系統，這是設計師和開發者的秘密武器，能夠輕鬆打造出令人驚艷的網頁佈局。快跟著我們一起踏上這趟有趣的旅程吧！
@@ -107,12 +125,12 @@
             <div class="accordion mb-3" id="accordion">
               <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#modalCollapse" aria-expanded="true" aria-controls="modalCollapse">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#modalCollapse" aria-controls="modalCollapse">
                     加強網頁互動！Bootstrap Modal 教學
                   </button>
                 </h2>
-                <div id="modalCollapse" class="accordion-collapse collapse show" data-bs-parent="#accordion">
+                <div id="modalCollapse" class="accordion-collapse collapse" data-bs-parent="#accordion">
                   <div class="accordion-body">
                     讓我們一起探索 Bootstrap 的 Modal 功能，這是一個強大的互動元件，可以讓我們在網頁中顯示彈出視窗，實現更多元化的互動效果。在這篇教學中，我們將學習如何使用 Bootstrap的
                     Modal，包括觸發機制、自訂樣式和動畫效果，讓我們的網頁更加生動有趣～
@@ -194,7 +212,11 @@
             <div class="vstack gap-3 bg-white p-4 rounded-4 shadow-sm">
               <h4 class="text-primary text-center">更多文章</h4>
               <div class="vstack gap-1 order-1">
-                <h5 class="text-truncate">加強網頁互動！Bootstrap Modal 教學</h5>
+                <h5 class="position-relative">
+                  <span class="badge bg-danger position-absolute top-0 start-0 translate-middle">1</span>
+                  加強網頁互動！Bootstrap
+                  Modal 教學
+                </h5>
                 <div>2023/5/19</div>
                 <p>讓我們一起探索 Bootstrap 的 Modal 功能，這是一個強大的互動元件，可以讓我們在網頁中顯示彈出視窗，實現更多元化的互動效果。在這篇教學中，我們將學習如何使用 Bootstrap的
                   Modal，包括觸發機制、自訂樣式和動畫效果，讓我們的網頁更加生動有趣～</p>
