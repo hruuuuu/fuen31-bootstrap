@@ -23,6 +23,12 @@
 </head>
 
 <body>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <symbol id="sun" viewBox="0 0 16 16">
+      <path
+        d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
+    </symbol>
+  </svg>
   <div class="bg-body-tertiary">
     <div class="container-md py-5">
       <div class="row gy-4">
@@ -98,15 +104,15 @@
                 </tbody>
               </table>
             </div>
-            <div class="accordion mb-3" id="accordionExample">
+            <div class="accordion mb-3" id="accordion">
               <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                    aria-expanded="true" aria-controls="collapseOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#modalCollapse" aria-expanded="true" aria-controls="modalCollapse">
                     加強網頁互動！Bootstrap Modal 教學
                   </button>
                 </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div id="modalCollapse" class="accordion-collapse collapse show" data-bs-parent="#accordion">
                   <div class="accordion-body">
                     讓我們一起探索 Bootstrap 的 Modal 功能，這是一個強大的互動元件，可以讓我們在網頁中顯示彈出視窗，實現更多元化的互動效果。在這篇教學中，我們將學習如何使用 Bootstrap的
                     Modal，包括觸發機制、自訂樣式和動畫效果，讓我們的網頁更加生動有趣～
@@ -116,11 +122,11 @@
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    data-bs-target="#buttonCollapse" aria-expanded="false" aria-controls="buttonCollapse">
                     華麗又實用！打造漂亮按鈕的 Bootstrap 教學
                   </button>
                 </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div id="buttonCollapse" class="accordion-collapse collapse" data-bs-parent="#accordion">
                   <div class="accordion-body">
                     在這篇教學中，我們將一起探索 Bootstrap 的按鈕元件，讓我們的網頁華麗又實用！我們將學習如何使用不同的按鈕樣式、大小和狀態，並添加圖標或下拉選單等功能。透過
                     Bootstrap的強大按鈕元件，我們可以輕鬆打造出各種吸引人的互動元素～
@@ -130,11 +136,11 @@
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    data-bs-target="#formCollapse" aria-expanded="false" aria-controls="formCollapse">
                     簡化表單設計！Bootstrap Form 教學
                   </button>
                 </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div id="formCollapse" class="accordion-collapse collapse" data-bs-parent="#accordion">
                   <div class="accordion-body">
                     讓我們來簡化表單設計的過程吧！在這篇教學中，我們將探索 Bootstrap 的 Form
                     元件，讓表單設計變得輕鬆又美觀。我們將學習如何使用不同的表單控制項、佈局工具和驗證功能，提升用戶體驗並節省開發時間。透過 Bootstrap 的強大 Form
@@ -143,36 +149,44 @@
                 </div>
               </div>
             </div>
-            <h2 class="text-primary">留個言吧！</h2>
-            <div class="form-floating mb-3">
-              <input type="text" class="form-control" id="nameInput" placeholder="">
-              <label for="nameInput">姓名或暱稱</label>
-            </div>
-            <div class="mb-3">
-              <label for="emailInput" class="form-label">Email</label>
-              <div class="input-group">
-                <input id="emailInput" type="text" class="form-control" placeholder="請輸入Email" aria-label="請輸入Email"
-                  aria-describedby="emailText">
-                <span class="input-group-text" id="emailText">@example.com</span>
+            <form action="">
+              <h2 class="text-primary">留個言吧！</h2>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="nameInput" placeholder="">
+                <label for="nameInput">姓名或暱稱</label>
               </div>
-            </div>
-            <div class="form-floating mb-3">
-              <textarea class="form-control" placeholder="" id="commentTextarea" style="height: 100px"></textarea>
-              <label for="commentTextarea">留言</label>
-            </div>
-            <div class="mb-3">
-              <label for="moreDataList" class="form-label">還想了解關於Bootstrap的...</label>
-              <input class="form-control" list="moreOptions" id="moreDataList" placeholder="Type to search...">
-              <datalist id="moreOptions">
-                <option value="網格">
-                <option value="按鈕">
-                <option value="模式對話框">
-              </datalist>
-            </div>
-            <div class="form-check form-switch mb-3">
-              <input class="form-check-input" type="checkbox" role="switch" id="subscribeSwitch">
-              <label class="form-check-label" for="subscribeSwitch">是否要訂閱電子報</label>
-            </div>
+              <div class="mb-3">
+                <label for="emailInput" class="form-label">Email</label>
+                <div class="input-group">
+                  <input id="emailInput" type="text" class="form-control" placeholder="請輸入Email" aria-label="請輸入Email"
+                    aria-describedby="emailText">
+                  <span class="input-group-text" id="emailText">@example.com</span>
+                </div>
+              </div>
+              <div class="form-floating mb-3">
+                <textarea class="form-control" placeholder="" id="commentTextarea" style="height: 100px"></textarea>
+                <label for="commentTextarea">留言</label>
+              </div>
+              <div class="mb-3">
+                <label for="moreDataList" class="form-label">還想了解關於Bootstrap的...</label>
+                <input class="form-control" list="moreOptions" id="moreDataList" placeholder="Type to search...">
+                <datalist id="moreOptions">
+                  <option value="網格">
+                  <option value="按鈕">
+                  <option value="模式對話框">
+                </datalist>
+              </div>
+              <div class="form-check form-switch mb-3">
+                <input class="form-check-input" type="checkbox" role="switch" id="subscribeSwitch">
+                <label class="form-check-label" for="subscribeSwitch">是否要訂閱電子報</label>
+              </div>
+            </form>
+            <div id="alertContainer"></div>
+            <button type="button" class="btn btn-primary" id="alertBtn">
+              <svg width="16" height="16" fill="currentColor" class="bi bi-brightness-high" role="img">
+                <use xlink:href="#sun" />
+              </svg>
+              點我給你一個驚喜</button>
           </div>
         </div>
         <div class="col-12 col-md-5 col-lg-4">
@@ -243,6 +257,28 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
   <!-- <script src="./bootstrap.bundle.min.js"></script> -->
+  <script>
+    const alertContainer = document.getElementById('alertContainer')
+    const appendAlert = (message, type) => {
+      const wrapper = document.createElement('div')
+      wrapper.innerHTML = [
+        `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+        `   <div>${message}</div>`,
+        '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+        '</div>'
+      ].join('')
+
+      alertContainer.append(wrapper)
+    }
+
+    const alertBtn = document.getElementById('alertBtn')
+    if (alertBtn) {
+      alertBtn.addEventListener('click', () => {
+        appendAlert('哈囉～～～', 'success')
+      })
+    }
+
+  </script>
 </body>
 
 </html>
