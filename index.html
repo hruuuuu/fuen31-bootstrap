@@ -93,13 +93,28 @@
                 </tbody>
               </table>
             </div>
-            <label for="moreDataList" class="form-label">還想了解關於Bootstrap的...</label>
-            <input class="form-control" list="moreOptions" id="moreDataList" placeholder="Type to search...">
-            <datalist id="moreOptions">
-              <option value="網格">
-              <option value="按鈕">
-              <option value="模式對話框">
-            </datalist>
+            <h2 class="text-primary">留個言吧！</h2>
+            <div class="mb-3">
+              <label for="emailInput" class="form-label">Email</label>
+              <div class="input-group">
+                <input id="emailInput" type="text" class="form-control" placeholder="請輸入Email" aria-label="請輸入Email"
+                  aria-describedby="emailText">
+                <span class="input-group-text" id="emailText">@example.com</span>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="moreDataList" class="form-label">還想了解關於Bootstrap的...</label>
+              <input class="form-control" list="moreOptions" id="moreDataList" placeholder="Type to search...">
+              <datalist id="moreOptions">
+                <option value="網格">
+                <option value="按鈕">
+                <option value="模式對話框">
+              </datalist>
+            </div>
+            <div class="form-check form-switch mb-3">
+              <input class="form-check-input" type="checkbox" role="switch" id="subscribeSwitch">
+              <label class="form-check-label" for="subscribeSwitch">是否要訂閱電子報</label>
+            </div>
           </div>
         </div>
         <div class="col-12 col-md-5 col-lg-4">
