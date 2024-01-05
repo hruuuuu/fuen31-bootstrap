@@ -1,6 +1,8 @@
 // 變數
+$component-active-bg: lightcoral;
 $primary: lightblue;
 $badge-font-size: 10px;
+$list-group-active-bg: $component-active-bg;
 
 @import "../bootstrap/scss/bootstrap.scss";
 
